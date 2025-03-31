@@ -18,7 +18,11 @@ void inputBytes() {
 
 // Функция для преобразования байтов в мегабайты
 void bytesToMegabytes() {
-    
+    long long bytes;
+    cout << "Введите объем информации в байтах: ";
+    cin >> bytes;
+    double megabytes = bytes / (1024.0 * 1024.0);
+    cout << bytes << " байт = " << megabytes << " МБ." << endl;
 }
 
 // Функция для преобразования байтов в гигабайты
