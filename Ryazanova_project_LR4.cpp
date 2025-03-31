@@ -23,7 +23,11 @@ void bytesToMegabytes() {
 
 // Функция для преобразования байтов в гигабайты
 void bytesToGigabytes() {
-    
+    long long bytes;
+    cout << "Введите объем информации в байтах: ";
+    cin >> bytes;
+    double gigabytes = bytes / (1024.0 * 1024.0 * 1024.0);
+    cout << bytes << " байт = " << gigabytes << " ГБ." << endl;
 }
 
 int main() {
